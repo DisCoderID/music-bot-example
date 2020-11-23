@@ -3,7 +3,7 @@
                                                            2. Put Prefix and Your User ID in config.json
                                                                           3. Modify It!
                                                      
-                           © Client Developer 2020 | Please, do not use our project as a commercial project. Instead, you can contribute on writing it                         */
+           © Not A 開発者 2020 | Please, do not use our project as a commercial project. Instead, you can contribute on writing it. Also, please do not remove the credit                        */
 
 const discord = require("discord.js");
 const client = new discord.Client({disableMentions:"everyone"})
@@ -56,7 +56,7 @@ client.on('message', msg => {
     const embed = new discord.MessageEmbed()
     .setDescription(`:wave: | My prefix is ${prefix}`)
     .setColor("RANDOM")
-    .setFooter("© Client Developer 2020")
+    .setFooter("© Not A 開発者 2020")
     msg.channel.send(embed)
   }
   if(msg.content == prefix) {
@@ -64,7 +64,7 @@ client.on('message', msg => {
     .setDescription(`Hey, It's me!
 You can type ${prefix}help to get bot commands list`)
     .setColor("RANDOM")
-    .setFooter("© Client Developer 2020")
+    .setFooter("© Not A 開発者 2020")
     return msg.channel.send(embed)
   }
   let args = msg.content.slice(prefix.length).trim().split(" ");
