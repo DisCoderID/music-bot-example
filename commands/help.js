@@ -11,7 +11,7 @@ module.exports = {
        helpembed.addField(`${cmd.name} (${cmd.alias})`, cmd.description)
      })
      helpembed.setColor("RANDOM")
-     .setFooter("© Client Developer 2020")
+     .setFooter("© Not A 開発者 2020")
      msg.channel.send(helpembed);
   }
 }
